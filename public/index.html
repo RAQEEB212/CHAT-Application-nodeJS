@@ -5,39 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat App</title>
   <link rel="icon" href="/img/favicon.png">
-  <link rel="stylesheet" href="/css/styles.min.css">
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
+
 <!-- Navigation Bar -->
-<header>
+<header style="background-color: #4CAF50; color: white; padding: 20px 0; text-align: center;">
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="details.html">Details</a></li>
-      <li><a href="chat.html">Chat</a></li>
+    <ul style="list-style-type: none; padding: 0;">
+      <li style="display: inline; margin-right: 20px; font-size: 18px;">
+        <a href="index.html" style="text-decoration: none; color: white;">Home</a>
+      </li>
+      <li style="display: inline; margin-right: 20px; font-size: 18px;">
+        <a href="details.html" style="text-decoration: none; color: white;">Details</a>
+      </li>
+      <li style="display: inline; font-size: 18px;">
+        <a href="chat.html" style="text-decoration: none; color: white;">Chat</a>
+      </li>
     </ul>
   </nav>
 </header>
 
 <!-- Introduction Section -->
-<section class="intro">
-  <h1>Welcome to My Chat Application</h1>
-  <p>Hello, I'm John Doe, and I am a Software Development Student. Welcome to my personal website where you can learn more about me, my work, and my interests.</p>
-  <p>I am currently studying Computer Science at XYZ University. I am passionate about web development, coding, and building interactive applications. This website contains information about my academic background, hobbies, and a chat feature where you can connect with others.</p>
-  <p>Feel free to explore the rest of the website and join the chat!</p>
+<section class="intro" style="text-align: center; padding: 30px 10px; background-color: #fff; margin-top: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+  <h1 style="color: #333;">Welcome to My Chat Application</h1>
+  <p style="font-size: 18px; color: #555;">Hello, I'm John Doe, and I am a Software Development Student. Welcome to my personal website where you can learn more about me, my work, and my interests.</p>
+  <p style="font-size: 18px; color: #555;">I am currently studying Computer Science at XYZ University. I am passionate about web development, coding, and building interactive applications. This website contains information about my academic background, hobbies, and a chat feature where you can connect with others.</p>
+  <p style="font-size: 18px; color: #555;">Feel free to explore the rest of the website and join the chat!</p>
 </section>
-<!-- Main Content -->
-<div class="centered-form">
-  <div class="centered-form__box">
-    <h1>Join</h1>
-    <form action="/chat.html">
-      <label for="username">Display name</label>
-      <input type="text" name="username" placeholder="Display name" required>
-      <label for="room">Room</label>
-      <input type="text" name="room" placeholder="Room" required>
-      <button>Join</button>
+
+<!-- Main Content (Join Form) -->
+<div class="centered-form" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+  <div class="centered-form__box" style="background-color: #fff; padding: 30px; width: 100%; max-width: 400px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); border-radius: 8px; text-align: center;">
+    <h2 style="font-size: 24px; color: #333;">Join the Chat</h2>
+    <form action="/chat.html" style="width: 100%;">
+      <label for="username" style="font-size: 16px; color: #555; margin-bottom: 10px; display: block; text-align: left;">Display name</label>
+      <input type="text" name="username" placeholder="Enter your display name" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px;">
+
+      <label for="room" style="font-size: 16px; color: #555; margin-bottom: 10px; display: block; text-align: left;">Room</label>
+      <input type="text" name="room" placeholder="Enter a room name" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px;">
+
+      <button type="submit" style="width: 100%; padding: 10px; background-color: #4CAF50; border: none; color: white; font-size: 16px; cursor: pointer; border-radius: 4px;">Join</button>
     </form>
   </div>
 </div>
+
+<!-- Footer -->
+<footer style="text-align: center; padding: 20px; background-color: #333; color: white; position: fixed; width: 100%; bottom: 0;">
+  <p>&copy; 2025 John Doe. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
